@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RepairAtHome | Mumbai’s Trusted Home Appliance Repair Experts</title>
+    <meta name="description"
+        content="Quick & reliable home appliance repair within 90 minutes. Washing machines, refrigerators, microwaves. 24x7 Support in Mumbai. Verified technicians.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon would go here -->
+    <style>
+        /* Critical CSS or fallback */
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🔧</span> RepairAtHome
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+
+                    <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#contact" class="nav-link cta-btn mobile-only">Book Service</a></li>
+                </ul>
+                <div class="nav-close" id="nav-close">&times;</div>
+            </nav>
+            <div class="nav-actions">
+                <a href="tel:+919170827626" class="nav-phone hide-mobile">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                    </svg>
+                    +91 91708 27626
+                </a>
+                <button class="btn btn-primary" onclick="openModal()">Book Service</button>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg"></div>
+            <div class="container hero-content fade-up">
+                <span class="badge">Mumbai’s #1 Appliance Service</span>
+                <h1 class="hero-title">Expert Home Appliance Repair & Service</h1>
+                <p class="hero-subtitle">Washing Machines, Refrigerators, Microwaves. Repair & Maintenance within 90
+                    minutes by verified experts.</p>
+                <div class="hero-btns">
+                    <button class="btn btn-primary btn-lg" onclick="openModal()">Book Now</button>
+                    <a href="tel:+919170827626" class="btn btn-outline btn-lg">Call Now</a>
+                </div>
+                <div class="hero-features">
+                    <div class="feature-item"><span>🚀</span> 90 Min Service</div>
+                    <div class="feature-item"><span>🛡️</span> 30 Days Warranty</div>
+                    <div class="feature-item"><span>👨‍🔧</span> Verified Pros</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust / Stats Section -->
+        <section class="section stats-section">
+            <div class="container grid stats-grid">
+                <div class="stat-card fade-up">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card fade-up" style="transition-delay: 100ms;">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Appliances Serviced</div>
+                </div>
+                <div class="stat-card fade-up" style="transition-delay: 200ms;">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support Available</div>
+                </div>
+                <div class="stat-card fade-up" style="transition-delay: 300ms;">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Genuine Parts</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section services" id="services">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <h2 class="section-title">Repair & Service Solutions</h2>
+                    <p class="section-desc">We specialize in repair and maintenance of all major brands.</p>
+                </div>
+                <div class="grid services-grid">
+                    <!-- Washing Machine -->
+                    <div class="service-card fade-up">
+                        <div class="service-icon">🧺</div>
+                        <h3>Washing Machine Repair & Service</h3>
+                        <p>Repair & General Service for Front load, top load, automatic & semi-automatic machines.</p>
+                        <ul class="service-features-list">
+                            <li>✓ Deep Cleaning / Descaling</li>
+                            <li>✓ Motor & PCB Repair</li>
+                            <li>✓ Noise & Vibration Issues</li>
+                        </ul>
+                        <button class="btn btn-sm btn-outline" onclick="openModal('Washing Machine Service')">Book
+                            Now</button>
+                    </div>
+                    <!-- Refrigerator -->
+                    <div class="service-card fade-up" style="transition-delay: 100ms;">
+                        <div class="service-icon">❄️</div>
+                        <h3>Refrigerator Repair & Service</h3>
+                        <p>Complete servicing for Single door, double door, and side-by-side refrigerators.</p>
+                        <ul class="service-features-list">
+                            <li>✓ Gas Filling & Leak Check</li>
+                            <li>✓ Cooling Issues Fixed</li>
+                            <li>✓ Compressor Repair</li>
+                        </ul>
+                        <button class="btn btn-sm btn-outline" onclick="openModal('Refrigerator Service')">Book
+                            Now</button>
+                    </div>
+                    <!-- Microwave -->
+                    <div class="service-card fade-up" style="transition-delay: 200ms;">
+                        <div class="service-icon">♨️</div>
+                        <h3>Microwave Oven Repair & Service</h3>
+                        <p>Expert repair and service for Convection, Grill and Solo microwave ovens.</p>
+                        <ul class="service-features-list">
+                            <li>✓ Heating Problems</li>
+                            <li>✓ Keypad/Panel Repair</li>
+                            <li>✓ Magnetron Replacement</li>
+                        </ul>
+                        <button class="btn btn-sm btn-outline" onclick="openModal('Microwave Service')">Book
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about" id="about">
+            <div class="container grid about-grid">
+                <div class="about-image fade-up">
+                    <!-- Placeholder for About Image, using a colored block for now or maybe later generate -->
+                    <img src="images/technician.jpg" alt="Technician servicing appliance"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="about-content fade-up">
+                    <span class="sub-title">Why Choose Us</span>
+                    <h2 class="section-title">Expert Care for Your Appliances</h2>
+                    <p>At RepairAtHome, we don't just fix broken machines; we ensure they run efficiently for years.
+                        From emergency repairs to routine servicing, we handle it all.</p>
+                    <ul class="check-list">
+                        <li><strong>Complete Servicing:</strong> Cleaning, maintenance, and performance checks.</li>
+                        <li><strong>Genuine Spare Parts:</strong> Only original parts used.</li>
+                        <li><strong>Service Warranty:</strong> 30-day warranty on all jobs.</li>
+                        <li><strong>Transparent Pricing:</strong> No hidden charges.</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary" onclick="openModal()">Book Service</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Testimonials -->
+        <section class="section reviews" id="reviews">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <h2 class="section-title">What Our Customers Say</h2>
+                </div>
+                <div class="grid review-grid">
+                    <div class="review-card fade-up">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Excellent service! My washing machine was serviced and descaled properly. Runs like new
+                            now."</p>
+                        <div class="reviewer">
+                            <span class="reviewer-name">- Priya Sharma, Bandra</span>
+                        </div>
+                    </div>
+                    <div class="review-card fade-up" style="transition-delay: 100ms;">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Saved me from buying a new fridge. The cooling issue was fixed instantly. Highly
+                            recommended!"</p>
+                        <div class="reviewer">
+                            <span class="reviewer-name">- Rahul Mehta, Andheri</span>
+                        </div>
+                    </div>
+                    <div class="review-card fade-up" style="transition-delay: 200ms;">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Honest pricing and genuine parts. The technician explained the service requirements
+                            clearly."</p>
+                        <div class="reviewer">
+                            <span class="reviewer-name">- Sneha Desai, Borivali</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section faq" id="faq">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                </div>
+                <div class="faq-container fade-up">
+                    <div class="faq-item">
+                        <button class="faq-question">Do you maintain and service appliances too? <span
+                                class="icon">+</span></button>
+                        <div class="faq-answer">
+                            <p>Yes, we offer general servicing, cleaning, and maintenance for washing machines, fridges,
+                                and microwaves to extend their life.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Do you provide a warranty? <span class="icon">+</span></button>
+                        <div class="faq-answer">
+                            <p>Yes, we provide a 30-day service warranty on all repairs and a manufacturer warranty on
+                                replaced parts.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">How quickly can a technician arrive? <span
+                                class="icon">+</span></button>
+                        <div class="faq-answer">
+                            <p>We strive for a 90-minute turnaround time in supported areas across Mumbai.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">What areas do you serve? <span class="icon">+</span></button>
+                        <div class="faq-answer">
+                            <p>We cover Andheri, Bandra, Borivali, Malad, Goregaon, Kurla, Thane, and Navi Mumbai.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner -->
+        <section class="cta-banner">
+            <div class="container cta-content fade-up">
+                <h2>Need Urgent Repair or Service?</h2>
+                <p>Don't let a broken appliance ruin your day. Call us now for instant support.</p>
+                <div class="banner-btns">
+                    <a href="tel:+919170827626" class="btn btn-light">Call +91 91708 27626</a>
+                    <a href="https://wa.me/919170827626?text=Hi%20RepairAtHome,%20I%20need%2024x7%20appliance%20repair"
+                        target="_blank" class="btn btn-outline-light">Chat on WhatsApp</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container grid footer-grid">
+            <div class="footer-col">
+                <a href="#" class="footer-logo">RepairAtHome</a>
+                <p>Mumbai’s most trusted home appliance repair and service experts.</p>
+                <div class="social-links">
+                    <!-- Social icons could go here -->
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#" onclick="openModal('Washing Machine Repair & Service')">Washing Machine Repair &
+                            Service</a></li>
+                    <li><a href="#" onclick="openModal('Refrigerator Repair & Service')">Refrigerator Repair &
+                            Service</a></li>
+                    <li><a href="#" onclick="openModal('Microwave Repair & Service')">Microwave Oven Repair &
+                            Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Service Areas</h4>
+                <ul>
+                    <li>Andheri • Bandra • Borivali</li>
+                    <li>Malad • Goregaon • Kurla</li>
+                    <li>Thane • Navi Mumbai</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>📞 <a href="tel:+919170827626">+91 91708 27626</a></p>
+                <p>📧 altabalam6852@gmail.com</p>
+                <p>🕒 24x7 Service Available</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 RepairAtHome. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/919170827626?text=Hi%20RepairAtHome,%20I%20need%2024x7%20appliance%20repair" target="_blank"
+        class="float-btn float-whatsapp" aria-label="Chat on WhatsApp">
+        <!-- Official WhatsApp SVG Icon -->
+        <svg viewBox="0 0 24 24" class="whatsapp-icon" fill="white">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+        </svg>
+    </a>
+    <a href="tel:+919170827626" class="float-btn float-phone" aria-label="Call Now">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+            </path>
+        </svg>
+    </a>
+
+    <!-- Modal for Booking -->
+    <div class="modal-overlay" id="modal">
+        <div class="modal-container">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div class="modal-header">
+                <h3>Book Repair or Service</h3>
+                <p>Get a callback within 10 minutes</p>
+            </div>
+            <form id="booking-form" class="booking-form" name="booking" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="booking">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="10-digit mobile number"
+                        pattern="[0-9]{10}">
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Required</label>
+                    <select id="service" name="service">
+                        <option value="General Inquiry">Select Service</option>
+                        <option value="Washing Machine Repair">Washing Machine Repair/Service</option>
+                        <option value="Refrigerator Repair">Refrigerator Repair/Service</option>
+                        <option value="Microwave Repair">Microwave Repair/Service</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location (Area)</label>
+                    <input type="text" id="location" name="location" placeholder="e.g. Bandra West">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Confirm Booking</button>
+            </form>
+            <p class="form-footer">Or call us directly at <a href="tel:+919170827626">+91 91708 27626</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
