@@ -6,16 +6,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const navClose = document.getElementById('nav-close');
     const navLinks = document.querySelectorAll('.nav-link');
 
+    function handleKeyboard(event, callback) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            callback();
+        }
+    }
+
     if (navToggle) {
         navToggle.addEventListener('click', () => {
             navMenu.classList.add('active');
         });
+        navToggle.addEventListener('keydown', (e) => handleKeyboard(e, () => navMenu.classList.add('active')));
     }
 
     if (navClose) {
         navClose.addEventListener('click', () => {
             navMenu.classList.remove('active');
         });
+        navClose.addEventListener('keydown', (e) => handleKeyboard(e, () => navMenu.classList.remove('active')));
     }
 
     // Close menu when clicking a link

@@ -4,14 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RepairAtHome | Mumbai’s Trusted Home Appliance Repair Experts</title>
+    <title>RepairAtHome Mumbai | AC, Fridge & Washing Machine Repair Service</title>
     <meta name="description"
         content="Quick & reliable home appliance repair within 90 minutes. Washing machines, refrigerators, microwaves. 24x7 Support in Mumbai. Verified technicians.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.repairathomemumbai.in/">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Favicon would go here -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "RepairAtHome Mumbai",
+      "telephone": "+919170827626",
+      "url": "https://www.repairathomemumbai.in/",
+      "priceRange": "₹₹",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Mumbai",
+        "addressLocality": "Mumbai",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400001",
+        "addressCountry": "IN"
+      },
+      "areaServed": ["Andheri", "Bandra", "Borivali", "Malad", "Goregaon", "Kurla", "Thane", "Navi Mumbai"],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Do you maintain and service appliances too?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we offer general servicing, cleaning, and maintenance for washing machines, fridges, and microwaves to extend their life."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Do you provide a warranty?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we provide a 30-day service warranty on all repairs and a manufacturer warranty on replaced parts."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How quickly can a technician arrive?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We strive for a 90-minute turnaround time in supported areas across Mumbai."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What areas do you serve?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We cover Andheri, Bandra, Borivali, Malad, Goregaon, Kurla, Thane, and Navi Mumbai."
+        }
+      }]
+    }
+    </script>
     <style>
         /* Critical CSS or fallback */
         .loading {
@@ -39,7 +109,7 @@
                     <li><a href="#faq" class="nav-link">FAQ</a></li>
                     <li><a href="#contact" class="nav-link cta-btn mobile-only">Book Service</a></li>
                 </ul>
-                <div class="nav-close" id="nav-close">&times;</div>
+                <div class="nav-close" id="nav-close" role="button" tabindex="0" aria-label="Close Menu">&times;</div>
             </nav>
             <div class="nav-actions">
                 <a href="tel:+919170827626" class="nav-phone hide-mobile">
@@ -51,7 +121,7 @@
                     +91 91708 27626
                 </a>
                 <button class="btn btn-primary" onclick="openModal()">Book Service</button>
-                <div class="nav-toggle" id="nav-toggle">
+                <div class="nav-toggle" id="nav-toggle" aria-label="Open Menu" role="button" tabindex="0">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -160,7 +230,7 @@
                 <div class="about-image fade-up">
                     <!-- Placeholder for About Image, using a colored block for now or maybe later generate -->
                     <img src="images/technician.jpg" alt="Technician servicing appliance"
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                        style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" width="600" height="400">
                 </div>
                 <div class="about-content fade-up">
                     <span class="sub-title">Why Choose Us</span>
@@ -301,6 +371,7 @@
                 <h4>Contact Us</h4>
                 <p>📞 <a href="tel:+919170827626">+91 91708 27626</a></p>
                 <p>📧 altabalam6852@gmail.com</p>
+                <p>📍 Mumbai, Maharashtra</p>
                 <p>🕒 24x7 Service Available</p>
             </div>
         </div>
@@ -332,7 +403,7 @@
     <!-- Modal for Booking -->
     <div class="modal-overlay" id="modal">
         <div class="modal-container">
-            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <button class="modal-close" onclick="closeModal()" aria-label="Close Modal">&times;</button>
             <div class="modal-header">
                 <h3>Book Repair or Service</h3>
                 <p>Get a callback within 10 minutes</p>
