@@ -824,3 +824,7 @@ p { margin-bottom: var(--spacing-sm); color: var(--text-light); }
     opacity: 1;
     transform: translateY(0);
 }
+
+.page-header h1, .page-header p {
+    color: var(--white);
+}
