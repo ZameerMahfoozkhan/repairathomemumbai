@@ -119,18 +119,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const formData = new FormData(bookingForm);
 
-            // Construct Netlify-friendly body
-            const params = new URLSearchParams(formData).toString();
-
-            fetch('/', {
+            fetch(bookingForm.action, {
                 method: 'POST',
-                headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: params
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
             })
-                .then(() => {
-                    alert('Booking Request Sent! We will contact you shortly.');
-                    bookingForm.reset();
-                    closeModal();
+                .then(response => {
+                    if (response.ok) {
+                        alert('Booking Request Sent! We will contact you shortly.');
+                        bookingForm.reset();
+                        closeModal();
+                    } else {
+                        throw new Error('Form submission failed');
+                    }
                 })
                 .catch((error) => {
                     console.error('Form submission error:', error);
