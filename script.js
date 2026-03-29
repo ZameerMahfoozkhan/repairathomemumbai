@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     const service = formData.get('service');
                     const location = formData.get('location');
 
-                    const message = `Hi RepairAtHome, I tried booking on your website but it failed. \nName: ${name}\nPhone: ${phone}\nService: ${service}\nLocation: ${location}`;
+                    const message = `Hi RepairAtHomeMumbai, I tried booking on your website but it failed. \nName: ${name}\nPhone: ${phone}\nService: ${service}\nLocation: ${location}`;
 
                     const whatsappUrl = `https://wa.me/919170827626?text=${encodeURIComponent(message)}`;
 
