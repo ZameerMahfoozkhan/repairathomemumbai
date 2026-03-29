@@ -1,0 +1,16 @@
+# Git Ignore for RepairAtHome project
+# Ignore temporary documents and scripts used for content updates
+
+*.docx
+*.zip
+*.ps1
+tmp_docx/
+docx_text.txt
+
+# Temporary scripts created during current session
+extract_docx.ps1
+update_html.js
+business_proof_maker.js
+fix_and_link.js
+cleanup_final.js
+node_modules/
