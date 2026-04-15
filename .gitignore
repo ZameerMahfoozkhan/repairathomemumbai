@@ -14,3 +14,5 @@ business_proof_maker.js
 fix_and_link.js
 cleanup_final.js
 node_modules/
+_rels/
+word/

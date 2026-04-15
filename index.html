@@ -1,287 +1,474 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17969462541"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-17969462541');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sameer Siddiqui Aircondition | Home Appliance Repair</title>
-    <meta name="description" content="Professional appliance repair service near me. We offer AC repair service in Lucknow, Delhi, Noida, Greater Noida, Mumbai, Bangalore, Goa, Pune, refrigerator repair, and washing machine repair at your doorstep.">
-    <meta name="keywords" content="home appliance repair in lucknow, appliance repair service near me, ac repair service in lucknow,Delhi, Noida, Greater Noida, Mumbai, Bangalore, Goa, Pune, refrigerator repair in lucknow,Delhi, Noida, Greater Noida, Mumbai, Bangalore, Goa, Pune, refrigerator washing machine repair in lucknow,Delhi, Noida, Greater Noida, Mumbai, Bangalore, Goa, Pune, doorstep appliance repair service, ac service in lucknow,Delhi, Noida, Greater Noida, Mumbai, Bangalore, Goa, Pune">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>RepairAtHomeMumbai Mumbai | AC, Fridge & Washing Machine Repair Service</title>
+    <meta name="description"
+        content="Quick & reliable home appliance repair within 90 minutes. Air Conditioner (AC), Refrigerator, Washing Machine, and LED/LCD TV.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.repairathomemumbai.in/">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon would go here -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "RepairAtHomeMumbai Mumbai",
+      "telephone": "+919170827626",
+      "url": "https://www.repairathomemumbai.in/",
+      "priceRange": "₹₹",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Mumbai",
+        "addressLocality": "Mumbai",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400001",
+        "addressCountry": "IN"
+      },
+      "areaServed": ["Mumbai", "Lucknow", "Ayodhya"],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Do you maintain and service appliances too?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we offer general servicing, cleaning, and maintenance for washing machines, fridges, and microwaves to extend their life."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Do you provide a warranty?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we provide a 30-day service warranty on all repairs and a manufacturer warranty on replaced parts."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How quickly can a technician arrive?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We strive for a 90-minute turnaround time in supported areas across Mumbai."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What areas do you serve?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We provide services in multiple cities including Mumbai, Lucknow, and Ayodhya."
+        }
+      }]
+    }
+    </script>
+    <style>
+        /* Critical CSS or fallback */
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
 </head>
-<body>
 
-    <!-- Header -->
-    <header>
+<body>
+    <!-- Navbar -->
+    <header class="header" id="header">
         <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="images/sameer_logo_transparent.png" alt="Sameer Siddiqui Aircondition Logo">
+            <a href="#" class="logo">
+                <span class="logo-icon">🔧</span> RepairAtHomeMumbai
             </a>
-            
-            <nav class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="verification.html">Business Proof</a>
-                <a href="contact.html">Contact</a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="#contact" class="nav-link cta-btn mobile-only">Book Service</a></li>
+                </ul>
+                <div class="nav-close" id="nav-close" role="button" tabindex="0" aria-label="Close Menu">&times;</div>
             </nav>
-            
-            <div class="nav-cta">
-                <a href="tel:18004103131" class="call-now-nav">
-                    <i class="fas fa-phone-alt"></i> 1800 410 3131
+            <div class="nav-actions">
+                <a href="tel:+919170827626" class="nav-phone hide-mobile">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                    </svg>
+                    +91 91708 27626
                 </a>
+                <button class="btn btn-primary" onclick="openModal()">Book Service</button>
+                <div class="nav-toggle" id="nav-toggle" aria-label="Open Menu" role="button" tabindex="0">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-            
-            <button class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </button>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container hero-content">
-            <h1>Fast & Reliable Home Appliance Repair</h1>
-            <p class="hero-desc">We provide professional repair and maintenance services for air conditioners, refrigerators, and washing machines right at your doorstep.</p>
-            
-            <div class="hero-features">
-                <span><i class="fas fa-check-circle"></i> Same Day Service</span>
-                <span><i class="fas fa-tools"></i> Experienced Technicians</span>
-                <span><i class="fas fa-tag"></i> Affordable Pricing</span>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg"></div>
+            <div class="container hero-content fade-up">
+                <span class="badge">Mumbai’s #1 Appliance Service</span>
+                <h1 class="hero-title">Expert Home Appliance Repair & Service</h1>
+                <p class="hero-subtitle">Air Conditioner (AC), Refrigerator, Washing Machine, and LED/LCD TV. Repair & Maintenance within 90
+                    minutes by verified experts.</p>
+                <div class="hero-btns">
+                    <button class="btn btn-primary btn-lg" onclick="openModal()">Book Now</button>
+                    <a href="tel:+919170827626" class="btn btn-outline btn-lg">Call Now</a>
+                </div>
+                <div class="hero-features">
+                    <div class="feature-item"><span>🚀</span> 90 Min Service</div>
+                    <div class="feature-item"><span>🛡️</span> 30 Days Warranty</div>
+                    <div class="feature-item"><span>👨‍🔧</span> Verified Pros</div>
+                </div>
             </div>
-            
-            <a href="tel:18004103131" class="btn btn-accent"><i class="fas fa-phone-alt"></i> Call Now to Book Service</a>
-        </div>
-    </section>
+        </section>
 
-    <!-- Services Section -->
-    <section class="section-padding">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-title">Our Services</h2>
-                <p class="section-subtitle">We provide top-notch doorstep repair services. Experience quick, reliable, and transparent appliance repair service near me.</p>
+        <!-- Trust / Stats Section -->
+        <section class="section stats-section">
+            <div class="container grid stats-grid">
+                <div class="stat-card fade-up">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card fade-up" style="transition-delay: 100ms;">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Appliances Serviced</div>
+                </div>
+                <div class="stat-card fade-up" style="transition-delay: 200ms;">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support Available</div>
+                </div>
+                <div class="stat-card fade-up" style="transition-delay: 300ms;">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Genuine Parts</div>
+                </div>
             </div>
-            
-            <div class="services-grid">
-                <!-- AC Repair -->
-                <div class="service-card">
-                    <div class="service-img-wrapper">
-                        <img src="images/ac.png" alt="AC Repair">
-                    </div>
-                    <h3>AC Repair & Service</h3>
-                    <p>Split AC repair, window AC service, and AC gas filling service by skilled technicians.</p>
-                    <a href="tel:18004103131" class="btn btn-outline" style="width: 100%;">Book Service</a>
-                </div>
-                
-                <!-- Refrigerator Repair -->
-                <div class="service-card">
-                    <div class="service-img-wrapper">
-                        <img src="images/fridge.png" alt="Refrigerator Repair">
-                    </div>
-                    <h3>Refrigerator Repair</h3>
-                    <p>Fridge not cooling repair and deep freezer repair to keep your food fresh.</p>
-                    <a href="tel:18004103131" class="btn btn-outline" style="width: 100%;">Book Service</a>
-                </div>
-                
-                <!-- Washing Machine Repair -->
-                <div class="service-card">
-                    <div class="service-img-wrapper">
-                        <img src="images/washing-machine.png" alt="Washing Machine Repair">
-                    </div>
-                    <h3>Washing Machine Repair</h3>
-                    <p>Front load and top load washing machine repair for smooth operations.</p>
-                    <a href="tel:18004103131" class="btn btn-outline" style="width: 100%;">Book Service</a>
-                </div>
-                
-                <!-- Microwave Repair -->
-                <div class="service-card">
-                    <div class="service-img-wrapper">
-                        <img src="images/microwave.png" alt="Microwave Repair">
-                    </div>
-                    <h3>Microwave Repair</h3>
-                    <p>Quick and efficient microwave repair service.</p>
-                    <a href="tel:18004103131" class="btn btn-outline" style="width: 100%;">Book Service</a>
-                </div>
+        </section>
 
-                <!-- TV Repair -->
-                <div class="service-card">
-                    <div class="service-img-wrapper">
-                        <img src="images/tv.png" alt="TV Repair">
-                    </div>
-                    <h3>TV Repair Service</h3>
-                    <p>Professional repair services for all your television issues.</p>
-                    <a href="tel:18004103131" class="btn btn-outline" style="width: 100%;">Book Service</a>
+        <!-- Services Section -->
+        <section class="section services" id="services">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <h2 class="section-title">Repair & Service Solutions</h2>
+                    <p class="section-desc">We specialize in repair and maintenance of all major brands.</p>
                 </div>
+                <div class="grid services-grid">
+                    <!-- Washing Machine -->
+                    <div class="service-card fade-up">
+                        <div class="service-icon">🧺</div>
+                        <h3>Washing Machine Repair & Service</h3>
+                        <p>Repair & General Service for Front load, top load, automatic & semi-automatic machines.</p>
+                        <ul class="service-features-list">
+                            <li>✓ Deep Cleaning / Descaling</li>
+                            <li>✓ Motor & PCB Repair</li>
+                            <li>✓ Noise & Vibration Issues</li>
+                        </ul>
+                        <button class="btn btn-sm btn-outline" onclick="openModal('Washing Machine Service')">Book
+                            Now</button>
+                    </div>
+                    <!-- Refrigerator -->
+                    <div class="service-card fade-up" style="transition-delay: 100ms;">
+                        <div class="service-icon">❄️</div>
+                        <h3>Refrigerator Repair & Service</h3>
+                        <p>Complete servicing for Single door, double door, and side-by-side refrigerators.</p>
+                        <ul class="service-features-list">
+                            <li>✓ Gas Filling & Leak Check</li>
+                            <li>✓ Cooling Issues Fixed</li>
+                            <li>✓ Compressor Repair</li>
+                        </ul>
+                        <button class="btn btn-sm btn-outline" onclick="openModal('Refrigerator Service')">Book
+                            Now</button>
+                    </div>
+                    <!-- Microwave -->
+                    <div class="service-card fade-up" style="transition-delay: 200ms;">
+                        <div class="service-icon">♨️</div>
+                        <h3>Microwave Oven Repair & Service</h3>
+                        <p>Expert repair and service for Convection, Grill and Solo microwave ovens.</p>
+                        <ul class="service-features-list">
+                            <li>✓ Heating Problems</li>
+                            <li>✓ Keypad/Panel Repair</li>
+                            <li>✓ Magnetron Replacement</li>
+                        </ul>
+                        <button class="btn btn-sm btn-outline" onclick="openModal('Microwave Service')">Book
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <!-- Dishwasher Repair -->
-                <div class="service-card">
-                    <div class="service-img-wrapper">
-                        <img src="images/dishwasher.png" alt="Dishwasher Repair">
-                    </div>
-                    <h3>Dishwasher Repair</h3>
-                    <p>Get your dishwasher working like new again.</p>
-                    <a href="tel:18004103131" class="btn btn-outline" style="width: 100%;">Book Service</a>
+        <!-- About Section -->
+        <section class="section about" id="about">
+            <div class="container grid about-grid">
+                <div class="about-image fade-up">
+                    <!-- Placeholder for About Image, using a colored block for now or maybe later generate -->
+                    <img src="images/technician.jpg" alt="Technician servicing appliance"
+                        style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" width="600" height="400">
+                </div>
+                <div class="about-content fade-up">
+                    <span class="sub-title">About RepairAtHomeMumbai</span>
+                    <h2 class="section-title">Independent & Reliable Appliance Repair Experts</h2>
+                    <p>RepairAtHomeMumbai is a trusted home appliance repair service brand owned and operated by MOHD ALTAB.
+                        We specialize in professional repair and maintenance services for washing machines,
+                        refrigerators, microwave ovens, air conditioners, televisions, and other household appliances.
+                    </p>
+                    <p>The business is independently managed with a focus on delivering fast response, genuine spare
+                        parts, transparent pricing, and reliable doorstep service. Our goal is to ensure customer
+                        satisfaction through skilled workmanship and dependable support.</p>
+                    <h3
+                        style="margin-top: 1.5rem; margin-bottom: 0.5rem; font-size: 1.25rem; font-weight: 600; color: var(--text-dark);">
+                        Business Operations & Service Area</h3>
+                    <p>RepairAtHomeMumbai is registered in Uttar Pradesh and operates as an independent appliance repair
+                        service provider. Currently, we provide services in multiple cities including Mumbai, Lucknow, and Ayodhya.</p>
+                    <p>All service requests, customer support, and business operations under the brand name RepairAtHomeMumbai
+                        are managed and authorized by MOHD ALTAB.</p>
+                    <p>For bookings and service inquiries, customers can contact us via phone or WhatsApp for quick
+                        assistance.</p>
+                    <a href="#contact" class="btn btn-primary" onclick="openModal()" style="margin-top: 1rem;">Book
+                        Service</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Why Choose Us -->
-    <section class="section-padding why-us">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-title">Why Choose Sameer Siddiqui Aircondition?</h2>
-                <p class="section-subtitle">We are committed to delivering the best repair solutions to our customers.</p>
-            </div>
-            
-            <div class="why-us-grid">
-                <div class="why-card">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <h4>Local Trusted Service Provider</h4>
-                    <p>Rooted in Lucknow, we are your neighbors dedicated to quality service.</p>
-                </div>
-                <div class="why-card">
-                    <i class="fas fa-stopwatch"></i>
-                    <h4>Quick Response Time</h4>
-                    <p>We respect your time and strive for same-day resolutions.</p>
-                </div>
-                <div class="why-card">
-                    <i class="fas fa-money-bill-wave"></i>
-                    <h4>Transparent Pricing</h4>
-                    <p>No hidden charges, honest quotes provided upfront.</p>
-                </div>
-                <div class="why-card">
-                    <i class="fas fa-user-cog"></i>
-                    <h4>Skilled Technicians</h4>
-                    <p>Expertly trained professionals handling your appliances.</p>
-                </div>
-                <div class="why-card">
-                    <i class="fas fa-smile"></i>
-                    <h4>Customer Satisfaction Focused</h4>
-                    <p>Your peace of mind is our ultimate goal.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Testimonials -->
-    <section class="section-padding testimonials">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-title">Customer Feedback</h2>
-            </div>
-            
-            <div class="testimonial-grid">
-                <div class="testimonial-card">
-                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="testimonial-text">"Had an AC cooling issue. The technician visited the same day and fixed it quickly. Good service."</p>
-                    <p class="testimonial-author">– Ravi Sharma, Lucknow</p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="testimonial-text">"Called for washing machine repair. The technician arrived on time and did the job properly."</p>
-                    <p class="testimonial-author">– Neha Verma, Lucknow</p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="testimonial-text">"Got my refrigerator repaired. Charges were explained pehle hi. Transparent service."</p>
-                    <p class="testimonial-author">– Amit Singh, Lucknow</p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
-                    <p class="testimonial-text">"Microwave repair was slightly delayed, but overall service was satisfactory."</p>
-                    <p class="testimonial-author">– Saurabh Gupta, Lucknow</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- FAQ Section -->
-    <section class="section-padding">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-title">Frequently Asked Questions</h2>
-            </div>
-            
-            <div class="faq-container">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>Q. Do you provide same day service?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Yes, we try to provide same day service based on availability.</p>
-                    </div>
+        <!-- Testimonials -->
+        <section class="section reviews" id="reviews">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <h2 class="section-title">What Our Customers Say</h2>
                 </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>Q. Are you an authorized service center?</span>
-                        <i class="fas fa-chevron-down"></i>
+                <div class="grid review-grid">
+                    <div class="review-card fade-up">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Excellent service! My washing machine was serviced and descaled properly. Runs like new
+                            now."</p>
+                        <div class="reviewer">
+                            <span class="reviewer-name">- Priya Sharma, Bandra</span>
+                        </div>
                     </div>
-                    <div class="faq-answer">
-                        <p>No, we are an independent service provider.</p>
+                    <div class="review-card fade-up" style="transition-delay: 100ms;">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Saved me from buying a new fridge. The cooling issue was fixed instantly. Highly
+                            recommended!"</p>
+                        <div class="reviewer">
+                            <span class="reviewer-name">- Rahul Mehta, Andheri</span>
+                        </div>
                     </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>Q. What are your charges?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Charges depend on the issue and will be informed before service. We maintain transparent pricing.</p>
+                    <div class="review-card fade-up" style="transition-delay: 200ms;">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Honest pricing and genuine parts. The technician explained the service requirements
+                            clearly."</p>
+                        <div class="reviewer">
+                            <span class="reviewer-name">- Sneha Desai, Borivali</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section faq" id="faq">
+            <div class="container">
+                <div class="section-header fade-up">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                </div>
+                <div class="faq-container fade-up">
+                    <div class="faq-item">
+                        <button class="faq-question">Do you maintain and service appliances too? <span
+                                class="icon">+</span></button>
+                        <div class="faq-answer">
+                            <p>Yes, we offer general servicing, cleaning, and maintenance for washing machines, fridges,
+                                and microwaves to extend their life.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Do you provide a warranty? <span class="icon">+</span></button>
+                        <div class="faq-answer">
+                            <p>Yes, we provide a 30-day service warranty on all repairs and a manufacturer warranty on
+                                replaced parts.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">How quickly can a technician arrive? <span
+                                class="icon">+</span></button>
+                        <div class="faq-answer">
+                            <p>We strive for a 90-minute turnaround time in supported areas across Mumbai.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">What areas do you serve? <span class="icon">+</span></button>
+                        <div class="faq-answer">
+                            <p>We provide services in multiple cities including Mumbai, Lucknow, and Ayodhya.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner -->
+        <section class="cta-banner">
+            <div class="container cta-content fade-up">
+                <h2>Need Urgent Repair or Service?</h2>
+                <p>Don't let a broken appliance ruin your day. Call us now for instant support.</p>
+                <div class="banner-btns">
+                    <a href="tel:+919170827626" class="btn btn-light">Call +91 91708 27626</a>
+                    <a href="https://wa.me/919170827626?text=Hi%20RepairAtHomeMumbai,%20I%20need%2024x7%20appliance%20repair"
+                        target="_blank" class="btn btn-outline-light">Chat on WhatsApp</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>Sameer Siddiqui Aircondition</h4>
-                    <p>Lucknow, Uttar Pradesh</p>
-                    <p>GSTIN: 09CUBPA8567P1ZY</p>
-                    <br>
-                    <p><i class="fas fa-phone-alt"></i> 1800 410 3131</p>
-                    <p><i class="fas fa-envelope"></i> support@24x7customer-service.online</p>
-                </div>
-                
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="verification.html">Business Verification</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms & Conditions</a></li>
-                        <li><a href="refund.html">Refund Policy</a></li>
-                        <li><a href="disclaimer.html">Disclaimer</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>Service Areas</h4>
-                    <p>Operating in: Delhi, Noida, Greater Noida, Mumbai, Bangalore, Goa, Pune, Lucknow</p>
-                    <p>Keywords: appliance repair in lucknow, ac repair in lucknow, fridge repair in lucknow, washing machine repair in lucknow, repair service near me</p>
+    <footer class="footer">
+        <div class="container grid footer-grid">
+            <div class="footer-col">
+                <a href="#" class="footer-logo">RepairAtHomeMumbai</a>
+                <p>Reliable home appliance repair services across multiple cities in India. Operated by Mohd Altab</p>
+                <div class="social-links">
+                    <!-- Social icons could go here -->
                 </div>
             </div>
-            
-            <div class="footer-bottom">
-                <p class="disclaimer-text"><strong>DISCLAIMER:</strong> We are an independent appliance repair service provider. We are NOT authorized, affiliated, or associated with any specific brand. All trademarks and brand names belong to their respective owners.</p>
-                <p>&copy; <span id="current-year">2026</span> Sameer Siddiqui Aircondition. All Rights Reserved.</p>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#" onclick="openModal('Washing Machine Repair & Service')">Washing Machine Repair &
+                            Service</a></li>
+                    <li><a href="#" onclick="openModal('Refrigerator Repair & Service')">Refrigerator Repair &
+                            Service</a></li>
+                    <li><a href="#" onclick="openModal('Microwave Repair & Service')">Microwave Oven Repair &
+                            Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Service Areas</h4>
+                <ul>
+                    <li>Mumbai</li>
+                    <li>Lucknow</li>
+                    <li>Ayodhya</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <a href="contact.html" style="text-decoration: none;">
+                    <h4>Contact Us</h4>
+                </a>
+                <p>📞 <a href="tel:+919170827626">+91-91708 27626</a></p>
+                <p>📧 <a href="mailto:mohdaltabmumbai@gmail.com" style="color: inherit;">mohdaltabmumbai@gmail.com</a></p>
+                <p>📍 <strong>Registered Address:</strong><br>Nisha Ka Purwa, Sohawal,<br>Ayodhya, Uttar Pradesh – 224202</p>
+                <p>🕒 24x7 Service Available</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container" style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+                <p>&copy; 2026 RepairAtHomeMumbai. Operated and Owned by MOHD ALTAB. All rights reserved.</p>
+                <p style="font-size: 0.8rem; text-align: center; max-width: 800px; margin: 10px auto; color: #94a3b8;">Independent service provider operated by Mohd Altab. Not affiliated with any brand or authorized service center.</p>
+                <div class="footer-legal-links"
+                    style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; font-size: 0.9rem;">
+                    <a href="contact.html" style="color: #cbd5e1; text-decoration: none;">Contact Us</a>
+                    <a href="privacy-policy.html" style="color: #cbd5e1; text-decoration: none;">Privacy Policy</a>
+                    <a href="terms-conditions.html" style="color: #cbd5e1; text-decoration: none;">Terms &
+                        Conditions</a>
+                    <a href="refund-cancellation.html" style="color: #cbd5e1; text-decoration: none;">Refund Policy</a>
+                    <a href="business-proof.html" style="color: #cbd5e1; text-decoration: none;">Business Proof</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <a href="tel:18004103131" class="floating-call-btn"><i class="fas fa-phone-alt"></i> Call Now</a>
-    <script src="assets/js/main.js"></script>
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/919170827626?text=Hi%20RepairAtHomeMumbai,%20I%20need%2024x7%20appliance%20repair" target="_blank"
+        class="float-btn float-whatsapp" aria-label="Chat on WhatsApp">
+        <!-- Official WhatsApp SVG Icon -->
+        <svg viewBox="0 0 24 24" class="whatsapp-icon" fill="white">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+        </svg>
+    </a>
+    <a href="tel:+919170827626" class="float-btn float-phone" aria-label="Call Now">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+            </path>
+        </svg>
+    </a>
+
+    <!-- Modal for Booking -->
+    <div class="modal-overlay" id="modal">
+        <div class="modal-container">
+            <button class="modal-close" onclick="closeModal()" aria-label="Close Modal">&times;</button>
+            <div class="modal-header">
+                <h3>Book Repair or Service</h3>
+                <p>Get a callback within 10 minutes</p>
+            </div>
+            <form id="booking-form" class="booking-form" name="booking" action="https://formspree.io/f/mreavlrq"
+                method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="10-digit mobile number"
+                        pattern="[0-9]{10}">
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Required</label>
+                    <select id="service" name="service">
+                        <option value="General Inquiry">Select Service</option>
+                        <option value="Washing Machine Repair">Washing Machine Repair/Service</option>
+                        <option value="Refrigerator Repair">Refrigerator Repair/Service</option>
+                        <option value="Microwave Repair">Microwave Repair/Service</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location (Area)</label>
+                    <input type="text" id="location" name="location" placeholder="e.g. Bandra West">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Confirm Booking</button>
+            </form>
+            <p class="form-footer">Or call us directly at <a href="tel:+919170827626">+91-91708 27626</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
